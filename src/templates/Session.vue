@@ -22,12 +22,12 @@
                   transition="dialog-bottom-transition"
                 >
                   <template v-slot:activator="{ on, attrs }">
-                    <v-btn color="primary" flat v-bind="attrs" v-on="on">Map</v-btn>
+                    <v-btn outlined class="text-none" color="primary" flat v-bind="attrs" v-on="on">Map</v-btn>
                   </template>
                   <template v-slot:default="dialog">
                     <v-card>
                       <v-card-actions class="justify-end">
-                        <v-btn text @click="dialog.value = false">Close</v-btn>
+                        <v-btn outlined class="text-none" @click="dialog.value = false">Close</v-btn>
                       </v-card-actions>
                       <img :src="findImage($page.session.room)" alt="">
                     </v-card>

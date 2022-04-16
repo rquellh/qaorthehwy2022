@@ -1,15 +1,24 @@
 <template>
   <v-footer absolute app height="auto" dark color="primary">
-    <div class="ml-3 caption">Created by Ryan Quellhorst</div>
+    <v-btn
+      text
+      small
+      class="caption pa-0"
+      target="_blank"
+      rel="noreferrer"
+      href="https://join.slack.com/t/qa-or-the-highway/shared_invite/zt-15i5o4jud-cC2ovy~6vGlJkzAdCF6Xrw"
+    >
+      <v-icon>$vuetify.icons.slack</v-icon>
+      <span class="pl-2 text-none">Join us on Slack</span>
+    </v-btn>
     <v-spacer />
+    <div class="pr-2 caption">© Ryan Quellhorst</div>
     <v-btn
       v-for="(site, index) in social"
       :key="index"
-      class="mx-1"
       :href="site.url"
       :title="site.title"
       rel="noreferrer"
-      dark
       icon
       target="_blank"
     >
@@ -26,22 +35,16 @@ export default {
         {
           icon: "$vuetify.icons.linkedin",
           url: "https://www.linkedin.com/in/ryanquellhorst/",
-          title: "Ryan Quellhorst LinkedIn"
+          title: "Ryan Quellhorst LinkedIn",
         },
         {
           icon: "$vuetify.icons.github",
           url: "https://github.com/rquellh",
-          title: "Ryan Quellhorst Github"
+          title: "Ryan Quellhorst Github",
         },
-        {
-          icon: "$vuetify.icons.bug",
-          url:
-            "https://github.com/rquellh/qa-schedule/issues/new?assignees=&labels=&template=bug_report.md&title=",
-          title: "Issue Report"
-        }
-      ]
+      ],
     };
-  }
+  },
 };
 </script>
 
