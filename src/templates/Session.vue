@@ -22,7 +22,7 @@
                   transition="dialog-bottom-transition"
                 >
                   <template v-slot:activator="{ on, attrs }">
-                    <v-btn outlined class="text-none" color="primary" flat v-bind="attrs" v-on="on">Map</v-btn>
+                    <v-btn outlined class="text-none" color="primary" v-bind="attrs" v-on="on">Map</v-btn>
                   </template>
                   <template v-slot:default="dialog">
                     <v-card>

@@ -36,7 +36,7 @@ export default {
     if (process.isClient) {
       if ("serviceWorker" in navigator) {
         window.addEventListener("load", function() {
-          navigator.serviceWorker.register("/qa-schedule/sw.js");
+          navigator.serviceWorker.register("/qaorthehwy2022/sw.js");
         });
       }
     }
