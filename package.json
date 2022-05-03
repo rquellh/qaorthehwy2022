@@ -2,7 +2,7 @@
   "name": "qaorthehwy2022",
   "private": true,
   "scripts": {
-    "build": "gridsome build & npx workbox injectManifest workbox-config.js",
+    "build": "gridsome build",
     "develop": "gridsome develop",
     "explore": "gridsome explore",
     "predeploy": "npm run build",
@@ -11,10 +11,8 @@
   "dependencies": {
     "gh-pages": "^3.2.3",
     "gridsome": "^0.7.0",
-    "vuetify": "^2.6.4",
-    "workbox-cli": "^6.5.3",
-    "workbox-routing": "^6.5.3",
-    "workbox-strategies": "^6.5.3"
+    "gridsome-plugin-pwa": "^0.0.22",
+    "vuetify": "^2.6.4"
   },
   "devDependencies": {
     "webpack-node-externals": "^3.0.0"
