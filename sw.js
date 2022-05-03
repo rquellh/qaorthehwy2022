@@ -14,7 +14,7 @@ workbox.core.setCacheNameDetails({
 // 1. stylesheet
 workbox.routing.registerRoute(
     new RegExp('\.css$'),
-    workbox.strategies.cacheFirst({
+    workbox.strategies.CacheFirst({
         cacheName: 'cache-stylesheets',
         plugins: [
             new workbox.expiration.ExpirationPlugin({
@@ -28,7 +28,7 @@ workbox.routing.registerRoute(
 // 2. images
 workbox.routing.registerRoute(
     new RegExp('\.(png|svg|jpg|jpeg)$'),
-    workbox.strategies.cacheFirst({
+    workbox.strategies.CacheFirst({
         cacheName: 'cache-images',
         plugins: [
             new workbox.expiration.ExpirationPlugin({
@@ -43,7 +43,7 @@ workbox.routing.registerRoute(
 // 3. html
 workbox.routing.registerRoute(
     new RegExp('\.html$'),
-    workbox.strategies.staleWhileRevalidate({
+    workbox.strategies.StaleWhileRevalidate({
         cacheName: 'cache-html',
         cacheExpiration: {
             maxAgeSeconds: 60 * 60 * 24 * 7 //cache for one week
@@ -54,7 +54,7 @@ workbox.routing.registerRoute(
 // 4. json
 workbox.routing.registerRoute(
     new RegExp('\.json$'),
-    workbox.strategies.staleWhileRevalidate({
+    workbox.strategies.StaleWhileRevalidate({
         cacheName: 'cache-json',
         cacheExpiration: {
             maxAgeSeconds: 60 * 60 * 24 * 1 //cache for one day
