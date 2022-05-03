@@ -104,16 +104,23 @@ export default {
         .replace(/:|-| |&/g, "")
         .toLowerCase();
     },
-    findFloor: function(room) {
-      var floorfilter = this.roomFiltered(room)
-      if (floorfilter == "greathall12" || floorfilter == "greathall3" || floorfilter == "usbanktheater") {
-        return "1st Floor"
-      } else if (floorfilter == "ballroom" || floorfilter == "studentalumniroom" ) {
-        return "2nd Floor"
-      } else if (floorfilter == "interfaithroom" || floorfilter == "cartoonroom" ) {
-        return "3rd Floor"
+    findFloor: function (room) {
+      var floorfilter = this.roomFiltered(room);
+      if (floorfilter == "greathall12" || floorfilter == "greathall3") {
+        return "1st Floor";
+      } else if (
+        floorfilter == "eastballroom" ||
+        floorfilter == "studentalumniroom" ||
+        floorfilter == "westballroom"
+      ) {
+        return "2nd Floor";
+      } else if (
+        floorfilter == "interfaithroom" ||
+        floorfilter == "cartoonroom"
+      ) {
+        return "3rd Floor";
       } else {
-        return "Error"
+        return "Error";
       }
     },
     findImage: function (floor) {
