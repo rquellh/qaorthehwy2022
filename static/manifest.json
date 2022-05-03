@@ -1,0 +1,20 @@
+{
+    "name": "QA or the Highway Schedule",
+    "short_name": "QAHwy2022",
+    "icons": [
+        {
+            "src": "logo-192.png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "logo-512.png",
+            "sizes": "512x512"
+        }
+    ],
+    "lang": "en-US",
+    "start_url": "/qaorthehwy2022/",
+    "scope": "/qaorthehwy2022/",
+    "display": "standalone",
+    "theme_color": "#1b51aa",
+    "background_color": "#ffffff"
+}

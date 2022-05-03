@@ -27,6 +27,12 @@ export default function (Vue, { appOptions, head }) {
     href: 'https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900',
   });
 
+  // Setup manifest for PWA
+  head.link.push({
+    rel: 'manifest',
+    href: '/qaorthehwy2022/manifest.json'
+  })
+
   const opts = {
     theme: {
       themes: {
@@ -43,37 +49,37 @@ export default function (Vue, { appOptions, head }) {
         circlesolid: {
           component: CircleSolid,
         },
-        linkedin:{
+        linkedin: {
           component: LinkedIn
         },
-        bug:{
+        bug: {
           component: Bug
         },
-        github:{
+        github: {
           component: Github
         },
-        website:{
+        website: {
           component: Website
         },
-        staroutline:{
+        staroutline: {
           component: StarOutline
         },
-        starsolid:{
+        starsolid: {
           component: StarSolid
         },
-        twitter:{
+        twitter: {
           component: Twitter
         },
-        linkedin:{
+        linkedin: {
           component: LinkedIn
         },
-        chevronleft:{
+        chevronleft: {
           component: ChevronLeft
-        }, 
-        youtube:{
+        },
+        youtube: {
           component: Youtube
         },
-        slack:{
+        slack: {
           component: Slack
         }
       }

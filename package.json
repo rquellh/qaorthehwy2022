@@ -2,7 +2,7 @@
   "name": "qaorthehwy2022",
   "private": true,
   "scripts": {
-    "build": "gridsome build",
+    "build": "gridsome build && npx workbox injectManifest workbox-config.js",
     "develop": "gridsome develop",
     "explore": "gridsome explore",
     "predeploy": "npm run build",

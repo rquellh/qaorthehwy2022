@@ -12,6 +12,7 @@
         <SessionList :sessions="$page.session7" :favorites="favorites" />
       </v-main>
     </Layout>
+    
   </v-app>
 </template>
 
@@ -23,11 +24,11 @@ import favorites from "@/data/favorites.json";
 export default {
   components: {
     SessionList,
-    IndexNavbar
+    IndexNavbar,
   },
-  data: function() {
+  data: function () {
     return {
-      favorites
+      favorites,
     };
   },
 
@@ -35,8 +36,15 @@ export default {
     //This is to install the service worker. Change the directory if the website changes
     if (process.isClient) {
       if ("serviceWorker" in navigator) {
-        window.addEventListener("load", function() {
-          navigator.serviceWorker.register("/qaorthehwy2022/service-worker.js");
+        window.addEventListener("load", function () {
+          navigator.serviceWorker
+            .register("/qaorthehwy2022/sw.js")
+            .then(function (registration) {
+              console.log("ServiceWorker registration successful with scope: ", registration.scope);
+            })
+            .catch(function (err) {
+              console.log("ServiceWorker registration failed: ", err);
+            });
         });
       }
     }
@@ -45,7 +53,10 @@ export default {
   mounted() {
     if (localStorage.favorites) {
       console.log("mounted");
-      this.favorites = { ...this.favorites, ...JSON.parse(localStorage.favorites) };
+      this.favorites = {
+        ...this.favorites,
+        ...JSON.parse(localStorage.favorites),
+      };
     }
   },
   //This is watching for changes in favorites and saving them to local storage
@@ -55,14 +66,14 @@ export default {
         console.log("favorites changed");
         localStorage.setItem("favorites", JSON.stringify(this.favorites));
       },
-      deep: true
-    }
+      deep: true,
+    },
   },
   metaInfo() {
     return {
-      title: "Schedule"
+      title: "Schedule",
     };
-  }
+  },
 };
 </script>
 
