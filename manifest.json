@@ -1,20 +1,48 @@
 {
-    "name": "QA or the Highway 2022 Schedule",
-    "short_name": "QAHwy 2022 Schedule",
+    "background_color": "#000000",
+    "icon_path": "./static/logo-512.png",
+    "name": "My app name",
+    "short_name": "App",
+    "theme_color": "#FFFFFF",
+    "lang": "en",
+    "display": "minimal-ui",
+    "file_name": "manifest.json",
+    "orientation": "any",
+    "scope": "/",
+    "start_url": "/",
+    "dir": "auto",
+    "prefer_related_applications": false,
+    "related_applications": [],
     "icons": [
         {
-            "src": "logo-192.png",
+            "src": "/assets/img/logo-512-512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        },
+        {
+            "src": "/assets/img/logo-512-192.png",
+            "type": "image/png",
             "sizes": "192x192"
         },
         {
-            "src": "logo-512.png",
-            "sizes": "512x512"
+            "src": "/assets/img/logo-512-144.png",
+            "type": "image/png",
+            "sizes": "144x144"
+        },
+        {
+            "src": "/assets/img/logo-512-96.png",
+            "type": "image/png",
+            "sizes": "96x96"
+        },
+        {
+            "src": "/assets/img/logo-512-72.png",
+            "type": "image/png",
+            "sizes": "72x72"
+        },
+        {
+            "src": "/assets/img/logo-512-48.png",
+            "type": "image/png",
+            "sizes": "48x48"
         }
-    ],
-    "lang": "en-US",
-    "start_url": "/qaorthehwy2022/",
-    "scope": "/qaorthehwy2022/",
-    "display": "standalone",
-    "theme_color": "#1b51aa",
-    "background_color": "#ffffff"
+    ]
 }
