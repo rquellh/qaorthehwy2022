@@ -17,7 +17,7 @@ workbox.routing.registerRoute(
     workbox.strategies.cacheFirst({
         cacheName: 'cache-stylesheets',
         plugins: [
-            new workbox.expiration.Plugin({
+            new workbox.expiration.ExpirationPlugin({
                 maxAgeSeconds: 60 * 60 * 24 * 7, // cache for one week
                 maxEntries: 20, // only cache 20 request
                 purgeOnQuotaError: true
@@ -31,7 +31,7 @@ workbox.routing.registerRoute(
     workbox.strategies.cacheFirst({
         cacheName: 'cache-images',
         plugins: [
-            new workbox.expiration.Plugin({
+            new workbox.expiration.ExpirationPlugin({
                 maxAgeSeconds: 60 * 60 * 24 * 7, //cache for one week
                 maxEntries: 50,
                 purgeOnQuotaError: true
