@@ -6,7 +6,7 @@
       class="caption pa-0"
       target="_blank"
       rel="noreferrer"
-      href="https://join.slack.com/t/qa-or-the-highway/shared_invite/zt-15i5o4jud-cC2ovy~6vGlJkzAdCF6Xrw"
+      href="https://join.slack.com/t/qaorthehwy/shared_invite/zt-18erd50r8-1hzOCOkriNCvVdLgHDKMKQ"
     >
       <v-icon>$vuetify.icons.slack</v-icon>
       <span class="pl-2 text-none">Join us on Slack</span>
