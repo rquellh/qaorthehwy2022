@@ -12,7 +12,6 @@
         <SessionList :sessions="$page.session7" :favorites="favorites" />
       </v-main>
     </Layout>
-    
   </v-app>
 </template>
 
@@ -40,7 +39,10 @@ export default {
           navigator.serviceWorker
             .register("/qaorthehwy2022/sw.js")
             .then(function (registration) {
-              console.log("ServiceWorker registration successful with scope: ", registration.scope);
+              console.log(
+                "ServiceWorker registration successful with scope: ",
+                registration.scope
+              );
             })
             .catch(function (err) {
               console.log("ServiceWorker registration failed: ", err);

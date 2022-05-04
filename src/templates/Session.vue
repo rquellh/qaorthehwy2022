@@ -6,13 +6,15 @@
         <v-container ma-0 pa-0 fluid align-center>
           <v-layout ma-0 pa-0 row wrap justify-space-between fill-height>
             <v-flex xs12 md8 pa-3>
-              <div class="headline font-weight-bold mb-2">{{ $page.session.title }}</div>
-              <div class="subheading pre-formatted">{{ $page.session.abstract }}</div>
+              <div class="headline font-weight-bold">{{ $page.session.title }}</div>
+              <v-divider class="my-2"/>
+              <div class="subheading pre-formatted text-color">{{ $page.session.abstract }}</div>
             </v-flex>
             <v-flex xs12 md4 pa-3>
               <div class="headline font-weight-bold">Session Information</div>
+              <v-divider class="my-2"/>
               <v-layout align-center justify-start>
-                <div class="pr-5">
+                <div class="pr-5 text-color">
                   <div class="subheading">Time: {{ $page.session.time }}</div>
                   <div class="subheading">Room: {{ $page.session.room }} <span>({{findFloor($page.session.room)}})</span></div>
                 </div>
@@ -125,7 +127,6 @@ export default {
     },
     findImage: function (floor) {
     var floorfilter = this.roomFiltered(floor)
-    console.log(floorfilter)
       try {
         return require(`@/assets/images/rooms/${floorfilter}.png`);
       } catch (error) {
@@ -137,6 +138,9 @@ export default {
 </script>
 
 <style scoped>
+.text-color {
+  color: rgba(0,0,0,.6);
+}
 .pre-formatted {
   white-space: pre-wrap;
 }

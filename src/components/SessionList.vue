@@ -3,7 +3,7 @@
     <v-layout row wrap fluid>
       <v-flex>
         <v-list three-line>
-          <v-subheader class="title font-weight-bold pa-0">{{
+          <v-subheader class="title font-weight-bold pa-0 background pl-3">{{
             sessions.edges[0].node.time
           }}</v-subheader>
           <div
@@ -22,7 +22,7 @@
                 <v-list-item-title>{{ session.node.title }}</v-list-item-title>
                 <v-list-item-subtitle>
                   <v-layout ma-0 pa-0 wrap>
-                    <v-flex xs12 sm6>
+                    <v-flex xs12 sm6 class="pb-1">
                       {{ session.node.speaker }}
                       <span v-if="session.node.speaker2"
                         >& {{ session.node.speaker2 }}</span
@@ -60,6 +60,7 @@
                 </v-btn>
               </v-list-item-action>
             </v-list-item>
+            <v-divider />
           </div>
         </v-list>
       </v-flex>
@@ -122,89 +123,10 @@ export default {
 </script>
 
 <style scoped>
-.small-icon {
-  font-size: 0.75rem;
-  vertical-align: middle;
+.background {
+  background-color: #E0E0E0;
 }
 
-.t800900 {
-  position: relative;
-}
-.t800900::after {
-  content: "";
-  height: 100%;
-  width: 0.25rem;
-  position: absolute;
-  left: 0;
-  background-color: #9c27b0;
-}
-.t9151015 {
-  position: relative;
-}
-
-.t9151015::after {
-  content: "";
-  height: 100%;
-  width: 0.25rem;
-  position: absolute;
-  left: 0;
-  background-color: #4caf50;
-}
-.t10301130 {
-  position: relative;
-}
-.t10301130::after {
-  content: "";
-  height: 100%;
-  width: 0.25rem;
-  position: absolute;
-  left: 0;
-  background-color: #03a9f4;
-}
-.t1245145 {
-  position: relative;
-}
-.t1245145::after {
-  content: "";
-  height: 100%;
-  width: 0.25rem;
-  position: absolute;
-  left: 0;
-  background-color: #3f51b5;
-}
-.t155255 {
-  position: relative;
-}
-.t155255::after {
-  content: "";
-  height: 100%;
-  width: 0.25rem;
-  position: absolute;
-  left: 0;
-  background-color: #f44336;
-}
-.t305405 {
-  position: relative;
-}
-.t305405::after {
-  content: "";
-  height: 100%;
-  width: 0.25rem;
-  position: absolute;
-  left: 0;
-  background-color: #ffc107;
-}
-.t415515 {
-  position: relative;
-}
-.t415515::after {
-  content: "";
-  height: 100%;
-  width: 0.25rem;
-  position: absolute;
-  left: 0;
-  background-color: #e91e63;
-}
 .cartoonroom {
   color: #90caf9;
 }

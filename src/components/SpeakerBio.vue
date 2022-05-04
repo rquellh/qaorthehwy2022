@@ -58,7 +58,8 @@
           <v-icon>$vuetify.icons.website</v-icon>
         </v-btn>
       </v-layout>
-      <div class="subheading">{{ bio }}</div>
+      <v-divider class="my-2" />
+      <div class="subheading text-color">{{ bio }}</div>
     </v-flex>
   </v-layout>
 </template>
@@ -85,3 +86,9 @@ export default {
   */
 };
 </script>
+
+<style scoped>
+.text-color {
+  color: rgba(0, 0, 0, 0.6);
+}
+</style>
