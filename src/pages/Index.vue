@@ -1,15 +1,15 @@
 <template>
   <v-app class="white">
-    <IndexNavbar :favorites="favorites" />
+    <IndexNavbar :favorites="favorites2022" />
     <Layout>
       <v-main>
-        <SessionList :sessions="$page.session1" :favorites="favorites" />
-        <SessionList :sessions="$page.session2" :favorites="favorites" />
-        <SessionList :sessions="$page.session3" :favorites="favorites" />
-        <SessionList :sessions="$page.session4" :favorites="favorites" />
-        <SessionList :sessions="$page.session5" :favorites="favorites" />
-        <SessionList :sessions="$page.session6" :favorites="favorites" />
-        <SessionList :sessions="$page.session7" :favorites="favorites" />
+        <SessionList :sessions="$page.session1" :favorites="favorites2022" />
+        <SessionList :sessions="$page.session2" :favorites="favorites2022" />
+        <SessionList :sessions="$page.session3" :favorites="favorites2022" />
+        <SessionList :sessions="$page.session4" :favorites="favorites2022" />
+        <SessionList :sessions="$page.session5" :favorites="favorites2022" />
+        <SessionList :sessions="$page.session6" :favorites="favorites2022" />
+        <SessionList :sessions="$page.session7" :favorites="favorites2022" />
       </v-main>
     </Layout>
   </v-app>
@@ -18,7 +18,7 @@
 <script>
 import SessionList from "@/components/SessionList";
 import IndexNavbar from "@/components/IndexNavbar";
-import favorites from "@/data/favorites.json";
+import favorites2022 from "@/data/favorites.json";
 
 export default {
   components: {
@@ -27,7 +27,7 @@ export default {
   },
   data: function () {
     return {
-      favorites,
+      favorites2022,
     };
   },
 
@@ -53,20 +53,20 @@ export default {
   },
   //This is checking if there is any information in local storage and saving to favorites
   mounted() {
-    if (localStorage.favorites) {
+    if (localStorage.favorites2022) {
       console.log("mounted");
-      this.favorites = {
-        ...this.favorites,
-        ...JSON.parse(localStorage.favorites),
+      this.favorites2022 = {
+        ...this.favorites2022,
+        ...JSON.parse(localStorage.favorites2022),
       };
     }
   },
   //This is watching for changes in favorites and saving them to local storage
   watch: {
-    favorites: {
+    favorites2022: {
       handler() {
         console.log("favorites changed");
-        localStorage.setItem("favorites", JSON.stringify(this.favorites));
+        localStorage.setItem("favorites2022", JSON.stringify(this.favorites2022));
       },
       deep: true,
     },
