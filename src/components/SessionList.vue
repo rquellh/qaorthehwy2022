@@ -1,5 +1,5 @@
 <template>
-  <v-container py-0 fluid>
+  <v-container pa-0 fluid>
     <v-layout row wrap fluid>
       <v-flex>
         <v-list three-line>
