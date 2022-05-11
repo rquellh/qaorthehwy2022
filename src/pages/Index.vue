@@ -51,14 +51,16 @@ export default {
       }
     }
   },
-  //This is checking if there is any information in local storage and saving to favorites
+  //This is checking if there is any information in local storage, compare and update to recent favorites list, and saving to favorites
   mounted() {
     if (localStorage.favorites2022) {
       console.log("mounted");
-      this.favorites2022 = {
-        ...this.favorites2022,
-        ...JSON.parse(localStorage.favorites2022),
-      };
+      const oldFavorites = JSON.parse(localStorage.favorites2022);
+      console.log(JSON.stringify(oldFavorites));
+      let speakers = new Set(oldFavorites.sessions.map(session => session.speaker))
+      let mergedSpeakers = [...oldFavorites.sessions, ...this.favorites2022.sessions.filter(session => !speakers.has(session.speaker))];
+      this.favorites2022.sessions = mergedSpeakers;
+      localStorage.setItem("favorites2022", this.favorites2022);
     }
   },
   //This is watching for changes in favorites and saving them to local storage
