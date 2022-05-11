@@ -41,8 +41,8 @@
             "bio": "Aly Brine is the founder of The Corporate Hippie Hustle, the leading resource for Corporate Hippies who want to thrive in their careers. As someone who loves juxtaposition, her work focuses on teaching both energetic and practical tools to equip her fellow lightworkers in purposeful work. Aly prides herself on embracing her awareness that effective transformation starts from within and exudes a talent to problem solve from multiple lenses while questioning the norms of work in a manner that’s backed by business acumen. She’s an award-winning coach, speaker, and podcast host with a background in Human Resources, collegiate career services and recruiting.\n\nAly comes with a Master’s in Human Resources Management and Bachelor’s in Psychology both from The Ohio State University, a yoga instruction certification and more professional development coursework than most humans should probably do in a lifetime. And if you were wondering: Enneagram 3, Scorpio Sun, Leo Moon, Taurus Rising and Manifesting Generator Human Design. She’s got crystals in her Louis Vuitton and is just as comfortable in a full moon circle as she is in a meeting with the leadership team. At the end of the day, she considers herself a little corporate, a little hippie and a lotta hustle.",
             "title": "LinkedIn: No Longer a Place Your Resume Goes to Die",
             "abstract": "LinkedIn is no longer a place where your resume goes to die only to be revived if you need to land a new job. The leading online professional network boasts over 700 million users from every industry, meaning, no matter what you're looking to accomplish in your career, you can find a LinkedIn connection willing to help! But with dozens of social media platforms each having their own nuances of how to act, what to post and who to be, feeling comfortable using LinkedIn can be a bit overwhelming. In this session, you'll learn everything you need to know to use LinkedIn to connect with fellow professionals. From optimizing your profile to the settings you need to change in order to ensure your profile is being seen along with how to identify the decision makers and most importantly, how to turn those connections into genuine relationships and walk away with a refreshed and optimized LinkedIn profile. We may be living in a virtual world but using LinkedIn to create relationships will take your career to the next level.",
-            "time": "3:05 - 4:05",
-            "room": "Great Hall 3",
+            "time": "9:15 - 10:15",
+            "room": "Great Hall 1 & 2",
             "picture": "",
             "website": "https://www.alybrine.com/",
             "linkedin": "https://www.linkedin.com/in/alybrine/",
@@ -233,17 +233,6 @@
             "twitter": "https://twitter.com/USI_LeeBarnes"
         },
         {
-            "speaker": "Mala Punyani",
-            "bio": "Mala Punyani is an Engineering Manager at Splunk with extensive experience in product quality and automation, building enterprise-quality products, and automation solutions. Prior to Splunk, Mala has led innovative test automation projects at enterprise companies including Home Depot, Visa, and Paypal. Mala is a certified PMP and scrum master experienced in coaching and holds graduate degrees in Computer Science and IT Project Management from City University (London) and Stanford University. She currently resides with her family in the SF Bay area.",
-            "title": "Why Salesforce Test Automation Shouldn’t Be Painful",
-            "abstract": "Today enterprise applications like Salesforce are now at the heart of business processes and 59% of organizations deploy a new software build daily. As quality engineering teams continue to increase investment in test automation of Salesforce applications, new challenges arise in complexity of requirements, ability to scale coverage, and successful implementation across teams to scale.\n\nMala Punyani, Engineering Manager at Splunk was tasked with identifying and implementing an end-to-end testing solution, which would address diverse business needs including API tests, PDF verification for invoicing, ERP system integration, SOQL query validation and running Apex batches. Because UI based automation leads to heavy maintenance, especially after small changes in UI and SFDC screen objects, Mala and her team partnered with their R&D teams to identify a successful automation of their dynamic APIs and test automation practices for their teams and business.\n\nIn this talk, Mala will share a holistic view of the challenges of traditional software testing in the complex Salesforce testing ecosystem and provide a roadmap for leaders to overcome implementation roadblocks in partnership with R&D teams. Finally, Mala will demonstrate how an investment of a DevOps solution with a Sauce Labs integration helped her agile team achieve time reduction of up to 50% for overall flow, while doubling release velocity without additional headcount. If you are a manager looking to scale end-to-end testing coverage and/or wondering how to make your Salesforce test automation less painful, you won’t want to miss this leadership session.",
-            "time": "9:15 - 10:15",
-            "room": "Great Hall 1 & 2",
-            "website": "",
-            "linkedin": "https://www.linkedin.com/in/mala-punyani-pmp-csm-b054144/",
-            "twitter": ""
-        },
-        {
             "speaker": "Mohita Prasad",
             "bio": "Mohita Prasad is currently Test Management Lead, at AST. She holds an MBA in Information Technology and Finance, and heads the Testing COE for her organization. Starting off as a tester she has since advanced to become testing lead for multiple projects.",
             "title": "Moving from Isolated Excel-based Testing to an Organization-wide TCoE",
@@ -360,6 +349,17 @@
             "room": "Interfaith Room",
             "website": "",
             "linkedin": "https://www.linkedin.com/in/hitesh-patel-78320057/",
+            "twitter": ""
+        },
+        {
+            "speaker": "Sarala Pandey",
+            "bio": "Sarala Pandey is presently serving as a Senior QA Manager at Chipotle Mexican Grill. Her expertise is building QA organization from scratch and lift it up all the way to enterprise level. In less than two years she has transform QA organization at CMG, and built a strong QA organization that is recognized by Enterprise Project Management team. Prior to that she had built a QA organization at Huntington National Bank where she developed enterprise QA standard, process and documentation for Waterfall and Agile development process. Sarala began her career in QA with an internship at Online Computer Library Center (OCLC). Over the course of 20 years, she has served as a QA Analyst, QA Lead, Off-shore Liaison, and finally as a QA Manager. She is responsible for delivering industry-wide SDLC standards to AT&T/IBM, SypherLink, Huntington National Bank and Chipotle Mexican Grill.",
+            "title": "Maturing the Enterprise Quality Practice",
+            "abstract": "The two primary contributors to poor quality in an organization are lack of involvement by management and lack of knowledge about quality. Without the right process and people, quality will be either a cost center or forgotten component by development. To achieve organizational success, enterprise quality must take action to build quality from top down.\nManagers must accept responsibility for the quality practice within the organization and promote it across the organization. Everyone is responsible for quality, not just QA. The journey is fraught with obstacles – maturing the quality practice of an organization builds long term success with robust process and will train employees.",
+            "time": "3:05 - 4:05",
+            "room": "Great Hall 3",
+            "website": "",
+            "linkedin": "https://www.linkedin.com/in/sarala-pandey-37a8105/",
             "twitter": ""
         }
     ]
